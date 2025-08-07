@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Internship Project</h1>
+
+  <!-- City Input -->
+  <div id="cityPrompt">
+    <label for="cityInput">Enter your city:</label>
+    <input type="text" id="cityInput" />
+    <button onclick="submitCity()">Submit</button>
+  </div>
+
+  <div id="mainContent" style="display: none;">
+    <!-- Video Player -->
+    <h2>Video Player</h2>
+    <select id="qualitySelector">
+      <option value="320">320p</option>
+      <option value="480">480p</option>
+      <option value="720" selected>720p</option>
+      <option value="1080">1080p</option>
+    </select>
+    <br><br>
+    <video id="videoPlayer" width="640" height="360" controls>
+      <source src="video_720p.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Comment Section -->
+    <h2>Comment Section</h2>
+    <textarea id="commentInput" rows="3" cols="50" placeholder="Enter your comment..."></textarea><br>
+    <button onclick="addComment()">Post Comment</button>
+
+    <div id="comments" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
