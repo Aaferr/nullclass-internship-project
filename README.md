@@ -46,9 +46,7 @@ nullclass-internship-project/
 └── README.md         # Project documentation
 ```
 
-## 🌐 Live Demo
 
-🔗 [View Project on GitHub Pages](https://aaferr.github.io/nullclass-internship-project/)
 
 
 ## 📜 License
